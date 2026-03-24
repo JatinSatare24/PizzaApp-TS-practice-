@@ -45,3 +45,21 @@ const menu: Pizza[] = [
 { name: "Hawaiian", price: 10 },
 { name: "Veggie", price: 9 },
 ]
+
+/**
+
+============================
+TYPE INFERENCE (PRIMITIVES)
+============================
+TypeScript infers number type automatically
+*/
+let cashInRegister = 100
+let nextOrderId = 1
+
+/**
+
+============================
+ARRAY OF CUSTOM TYPES
+============================
+*/
+const orderQueue: Order[] = []
