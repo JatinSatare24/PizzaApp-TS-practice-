@@ -10,3 +10,11 @@ name: string
 price: number
 }
 
+/**
+
+============================
+LITERAL TYPES + UNION TYPES
+============================
+Restricting status to only specific string values
+*/
+type OrderStatus = "ordered" | "completed"
