@@ -115,3 +115,35 @@ function placeOrder(pizzaName: string) {
 
     return newOrder
 }
+
+/**
+
+============================
+FUNCTION PARAM TYPE (number)
+
+
+TYPE-SAFE UPDATE
+
+============================
+*/
+function completeOrder(orderId: number) {
+    const order = orderQueue.find(order => order.id === orderId)
+
+    /**
+    
+    TYPE NARROWING AGAIN
+    */
+    if (!order) {
+        console.error(`${ orderId } was not found in the orderQueue`)
+        return
+    }
+
+    /**
+    
+    LITERAL TYPE ENFORCEMENT
+    Only "completed" is allowed
+    */
+    order.status = "completed"
+
+    return order
+}
