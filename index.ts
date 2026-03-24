@@ -18,3 +18,16 @@ LITERAL TYPES + UNION TYPES
 Restricting status to only specific string values
 */
 type OrderStatus = "ordered" | "completed"
+
+/**
+
+============================
+NESTED TYPES
+============================
+Using one type (Pizza) inside another (Order)
+*/
+type Order = {
+id: number
+pizza: Pizza
+status: OrderStatus
+}
