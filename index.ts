@@ -63,3 +63,14 @@ ARRAY OF CUSTOM TYPES
 ============================
 */
 const orderQueue: Order[] = []
+
+/**
+
+============================
+FUNCTION PARAMETER TYPE
+============================
+Enforcing input type using Pizza
+*/
+function addNewPizza(pizzaObj: Pizza) {
+menu.push(pizzaObj)
+}
