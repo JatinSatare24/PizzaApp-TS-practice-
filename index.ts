@@ -31,3 +31,17 @@ id: number
 pizza: Pizza
 status: OrderStatus
 }
+
+/**
+
+============================
+ARRAY TYPE ANNOTATION
+============================
+Explicitly typing an array of Pizza objects
+*/
+const menu: Pizza[] = [
+{ name: "Margherita", price: 8 },
+{ name: "Pepperoni", price: 10 },
+{ name: "Hawaiian", price: 10 },
+{ name: "Veggie", price: 9 },
+]
